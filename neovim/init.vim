@@ -1,4 +1,5 @@
-call plug#begin('~/.vim/plugged')
+
+call plug#begin()
 Plug 'dense-analysis/ale'
 Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -12,7 +13,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'brooth/far.vim'
 call plug#end()
 
-" Colorscheme
+" ColorScheme
 set termguicolors
 set background=dark
 colorscheme gruvbox
@@ -40,9 +41,7 @@ set expandtab
 
 " Split
 nnoremap <leader>s :split<cr>
-nnoremap <leader>d :vsplit<cr>
-
-" Split Navigation
+nnoremap <leader>d :vsplit<cr> " Split Navigation
 nnoremap <leader>j <C-w>j
 nnoremap <leader>k <C-w>k
 nnoremap <leader>h <C-w>h
@@ -76,4 +75,3 @@ let g:ale_sign_warning = '⚡️'
 
 " React
 let g:jsx_ext_required = 0
-
