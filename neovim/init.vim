@@ -1,4 +1,4 @@
-call plug#begin('~/.vim/plugged')
+call plug#begin()
 Plug 'dense-analysis/ale'
 Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -12,7 +12,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'brooth/far.vim'
 call plug#end()
 
-" Colorscheme
+" ColorScheme
 set termguicolors
 set background=dark
 colorscheme gruvbox
@@ -70,10 +70,10 @@ let g:ale_fixers = {
 \   'css': ['prettier'],
 \   'json': ['prettier', 'eslint'],
 \}
+
 let g:ale_fix_on_save = 1
 let g:ale_sign_error = '🔥'
 let g:ale_sign_warning = '⚡️'
 
 " React
 let g:jsx_ext_required = 0
-
